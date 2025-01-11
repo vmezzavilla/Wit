@@ -21,6 +21,7 @@ services:
     container_name: rest
     depends_on:
       - kafka
+      - calculator
     environment:
       - KAFKA_BROKER=kafka:9092
       - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092

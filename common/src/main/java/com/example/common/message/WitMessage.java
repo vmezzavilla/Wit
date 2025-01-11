@@ -1,5 +1,7 @@
 package com.example.common.message;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class WitMessage {
+    @JsonView(View.Kafka.class)
     private UUID id;
-    private BigDecimal number1;
-    private BigDecimal number2;
-    private BigDecimal result;
+    @JsonView(View.Kafka.class)
+    private Number number1;
+    @JsonView(View.Kafka.class)
+    private Number number2;
+    @JsonView(View.Rest.class)
+    private Number result;
 }
