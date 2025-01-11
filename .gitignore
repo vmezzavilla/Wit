@@ -1,0 +1,17 @@
+/mvnw.cmd
+/mvnw
+/HELP.md
+/rest/mvnw.cmd
+/rest/mvnw
+/rest/HELP.md
+/rest/target/
+/rest/.gitattributes
+/common/target/
+/calculator/mvnw.cmd
+/calculator/mvnw
+/calculator/HELP.md
+/calculator/.gitattributes
+/calculator/target/
+/.idea/
+/calculator/.mvn/wrapper/maven-wrapper.properties
+/rest/.mvn/wrapper/maven-wrapper.properties
